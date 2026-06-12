@@ -62,12 +62,3 @@ Solve classification for both original and augmented datasets using **pre-traine
 
 - **Keras**: [Model Applications](https://keras.io/api/applications/)
 - **PyTorch**: [Vision Models](https://pytorch.org/vision/0.8/models.html)
-
-## 🚀 Getting Started
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/your-repo-name.git
-
-# Install dependencies (example)
-pip install tensorflow torch torchvision matplotlib numpy
