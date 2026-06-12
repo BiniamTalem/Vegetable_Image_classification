@@ -1,58 +1,70 @@
 {
-  "title": "Dataset Augmentation and Transfer Learning for Neural Networks",
+  "project_title": "Augmentation of datasets from images and transfer learning for neural networks",
   "purpose": [
-    "Familiarize with dataset augmentation techniques using images",
-    "Learn and apply transfer learning methods for neural networks"
+    "To get acquainted with the augmentation of datasets from images",
+    "Learn how to transfer learning for neural networks"
   ],
-  "task_overview": {
-    "dataset_description": {
-      "classes": [
-        "Beans",
-        "Bitter Gourd",
-        "Bottle Gourd",
-        "Eggplant",
-        "Broccoli",
-        "Cabbage",
-        "Capsicum",
-        "Carrot",
-        "Cauliflower",
-        "Cucumber",
-        "Papaya",
-        "Potato",
-        "Pumpkin",
-        "Radish",
-        "Tomato"
-      ],
-      "total_images": 21000,
-      "images_per_class": 1400,
-      "image_resolution": "224x224 pixels",
-      "format": ".jpg",
-      "dataset_split": {
-        "training": "approximately 70%",
-        "validation": "approximately 15%",
-        "testing": "approximately 15%"
-      },
-      "dataset_link": "https://drive.google.com/drive/folders/1He5s1VTwm74jVUFvncyW2tkpX9zx9_82X?usp=sharing"
+  "dataset_description": {
+    "classes": [
+      "beans", "bitter gourd", "bottle gourd", "eggplant", "broccoli",
+      "cabbage", "capsicum", "carrot", "cauliflower", "cucumber",
+      "papaya", "potato", "pumpkin", "radish", "tomato"
+    ],
+    "total_images": 21000,
+    "images_per_class": 1400,
+    "image_resolution": "224x224",
+    "format": "jpg",
+    "split_ratio": {
+      "train": "70%",
+      "validation": "15%",
+      "test": "15%"
     },
-    "tasks": [
-      {
-        "title": "Basic CNN Classification",
-        "description": "Build a CNN to classify vegetable images, train on training set, plot learning and validation curves, evaluate on test set."
-      },
-      {
-        "title": "Augmented Dataset Classification",
-        "description": "Apply dataset augmentation techniques, retrain the same CNN architecture, compare performance with previous results, and analyze the impact."
-      },
-      {
-        "title": "Transfer Learning with Pre-trained Models",
-        "description": "Use pre-trained models from Keras or PyTorch, fine-tune at least 3 models on initial and augmented datasets, compare results, and optionally test on internet images."
-      }
-    ],
-    "notes": [
-      "Involves building, training, and evaluating neural networks.",
-      "Focus on understanding the benefits of dataset augmentation and transfer learning.",
-      "Visualize results with plots and summarize conclusions."
-    ],
-    "good_luck_message": "Good luck and happy coding!"
-  }
+    "data_source": "https://drive.google.com/drive/folders/1He5s1VTwm74jVUFvncyW2tkpX9zx982X?usp=sharing"
+  },
+  "tasks": [
+    {
+      "task_id": 1,
+      "title": "Baseline CNN Classification",
+      "description": "Solve classification using a convolutional neural network on the original dataset.",
+      "actions": [
+        "Build training and validation curves",
+        "Test results on the test set"
+      ]
+    },
+    {
+      "task_id": 2,
+      "title": "CNN with Augmented Dataset",
+      "description": "Same CNN architecture as Task 1, but applied on a pre-augmented dataset.",
+      "actions": [
+        "Compare results with Task 1",
+        "Draw conclusions"
+      ]
+    },
+    {
+      "task_id": 3,
+      "title": "Transfer Learning",
+      "description": "Solve classification for both original and augmented datasets using pre-trained models.",
+      "requirements": [
+        "Use at least 3 pre-trained models",
+        "Available frameworks: Keras (https://keras.io/api/applications/) or PyTorch (https://pytorch.org/vision/0.8/models.html)"
+      ],
+      "actions": [
+        "Compare classification results",
+        "Draw conclusions",
+        "Optional: Test on arbitrary internet images of vegetables"
+      ]
+    }
+  ],
+  "expected_deliverables": [
+    "Training and validation curves for each task",
+    "Test set accuracy results",
+    "Comparison between baseline, augmented, and transfer learning models",
+    "Conclusions based on performance differences",
+    "(Optional) Predictions on custom internet images"
+  ],
+  "frameworks_suggested": {
+    "keras_models": "https://keras.io/api/applications/",
+    "pytorch_models": "https://pytorch.org/vision/0.8/models.html"
+  },
+  "status": "planned"
 }
